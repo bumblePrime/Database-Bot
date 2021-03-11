@@ -50,7 +50,7 @@ Once you have done this it is time to deploy the bot to heroku. To do so
 
 
 ## Future Updates:
-At the time of writing I have added just one ability in this bot template that checks if a file exists or not.If you are comfortabel with python and MySQL you can add more abilities of your own that suit your personal needs. Will add some more common abilities in fututre iterartions of this repo.
+At the time of writing I have added just one ability in this bot template that checks if a file exists or not.If you are comfortable with python and MySQL you can add more abilities of your own that suit your personal needs. Will add some more common abilities in fututre iterartions of this repo.
 One major upgrade that I have planned though is ability to update the database on the fly since at the moment if your media collection has any new additions, you will have to update the database file manually(or rerunning teh script) and redeploy the bot on heroku for the new entries to reflect. 
 Upgrade coming soon.
 
