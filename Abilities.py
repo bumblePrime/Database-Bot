@@ -4,7 +4,7 @@ conn=sqlite3.connect(database)# your database name
 cur=conn.cursor()
 
 def confirm_exists(name):
-    cur.execute('SELECT Name FROM '+table+' WHERE Name like \'%'+name)# MySQL query to search databse
+    cur.execute('SELECT Name FROM '+table+' WHERE Name like \'%'+name+'%\'')# MySQL query to search databse
     # PS:If you want,you can search multiple table simultaneously. just need to use the UNION function in  MySQL
     entries=cur.fetchall()
     return entries
