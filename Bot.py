@@ -29,7 +29,7 @@ def respond():
    return 'ok'
 
 @app.route('/start_bot', methods=['GET', 'POST'])
-def set_webhook(): #settign up webhook so that the bot can communicate with scripts
+def set_webhook(): #setting up webhook so that the bot can communicate with scripts
    s=bot.setWebhook('{URL}{HOOK}'.format(URL=URL, HOOK=TOKEN))
    if s:
        return "Bot Activated"
