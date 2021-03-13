@@ -1,7 +1,7 @@
 # Digital-Media-Bot
 
 This project is made around a simple bot that at the time of writing, is non-intelligent. All it does is searches a database of media files that are stored on a local machine. While prototyping this idea I implemented the bot in a CLI environment(check branch titled **CLI-Prototype** (https://github.com/bumblePrime/Digital-Media-Bot/tree/CLI-Prototype)) and later integrated the bot with telegram and deployed it on heroku so that it can be used at all times from anywhere.
-My own bot has been up since 03 March 2021 9:45 PM IST and I am regularly adding more and more personalised abilities to it.
+My own bot has been up since 03 March 2021 9:45 PM IST and I am regularly adding more and more personalised abilities to it. This bot can be repurposed to serve as an inventory bot or many other scenarios as well where one wishes to check availability.
 
 This repository is like a template that can be used to design your own Media Bot as I like to call it. 
 You will need a database of your media files, I've made mine using a script I wrote in python that is also availabe at https://github.com/bumblePrime/Digital-Media-Organizer that outputs a sqlite database. Once you have your own database,copy that file into the current directory and go to `creds.py` file and place the name of database and the name of table inside the database to be searched.
@@ -51,7 +51,8 @@ Once you have done this it is time to deploy the bot to heroku. To do so
 
 ## Future Updates:
 At the time of writing I have added just one ability in this bot template that checks if a file exists or not.If you are comfortable with python and MySQL you can add more abilities of your own that suit your personal needs. Will add some more common abilities in fututre iterartions of this repo.
-One major upgrade that I have planned though is ability to update the database on the fly since at the moment if your media collection has any new additions, you will have to update the database file manually(or rerunning teh script) and redeploy the bot on heroku for the new entries to reflect. 
+One major upgrade that I have planned though is ability to update the database on the fly since at the moment if your media collection has any new additions, you will have to update the database file manually(or rerunning teh script) and redeploy the bot on heroku for the new entries to reflect.
+Also plan on integrating google search api as well so that one can get more details that aren't necessarily stored in database.
 Upgrade coming soon.
 
 
